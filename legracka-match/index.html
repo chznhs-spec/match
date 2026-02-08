@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Match - Učitelé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <div class="header">
+        <img src="horaklogo.png" alt="Logo Horák"> 
+        <h1>Perfect Match: Sborovna</h1>
+        <p>Jakému vyučujícímu se nejvíc podobáte</p>
+
+    <form id="matchForm" action="https://script.google.com/macros/s/AKfycbw7Dbc2-C4jv_xiXwQ7yXeZxWyvsqEeL0RelHK0lPKFS7KwCqwcWy2Mzx3F0o4ZUxE/exec" method="POST">
+        <div class="question"></div>
+            <label>Vaše celé jméno:</label>
+            <input type="text" name="jmeno" required placeholder="Mgr. Jan Amos">
+        </div>
+
+        <div class="question">
+            <label>1. Jaký styl ranního probuzení vás vystihuje?</label>
+            <select name="q1">
+                <option value="A">Tři silná kafe a jdu na věc</option>
+                <option value="B">Pomalý čaj a meditace nad rozvrhem</option>
+                <option value="C">Běh do školy na poslední chvíli</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>2. Jak nejraději trávíte přestávky?</label>
+            <select name="q2">
+                <option value="A">V kabinetu v tichu</option>
+                <option value="B">Diskuzí s kolegy na chodbě</option>
+                <option value="C">Přípravou pomůcek na další hodinu</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>3. Jaký je váš přístup k technologiím ve výuce?</label>
+            <select name="q3">
+                <option value="A">Nejraději bych se vrátil k tabuli a křídám</option>
+                <option value="B">Používám technologie, ale s mírou</option>
+                <option value="C">Jsem nadšenec do moderních výukových pomůcek</option>
+                <Option value="D">Využívám ty, které musím</Option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>4. Jaký je váš oblíbený způsob komunikace s kolegy?</label>
+            <select name="q4">
+                <option value="A">E-mail</option>
+                <option value="B">Osobní rozhovor</option>
+                <option value="C">Skupinový chat</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>5. Jaký je váš přístup k přípravě na hodiny?</label>
+            <select name="q5">
+                <option value="A">Připravuji se detailně a s předstihem</option>
+                <option value="B">Připravuji se, ale často improvizuji</option>
+                <option value="C">Spíše spoléhám na svou zkušenost a improvizaci</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>6. Jaký je váš oblíbený způsob relaxace po náročném dni?</label>
+            <select name="q6">
+                <option value="A">Čtení knihy nebo sledování filmu</option>
+                <option value="B">Sport nebo procházka na čerstvém vzduchu</option>
+                <option value="C">Setkání s přáteli nebo rodinou</option>
+                <option value="D">Odpočinek sám v klidu</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>7. Jaký je váš přístup k opravování testů?</label>
+            <select name="q7">
+                <option value="A">Udělám to hned ve škole</option>
+                <option value="B">Beru to domů a dělám v klidu</option>
+                <option value="C">Nechávám to na poslední chvíli</option>
+            </select>
+        </div>
+
+        <div class="question">
+    <label>8. Jaký je váš nejoblíbenější sport (aktivně i pasivně)?</label>
+    <select name="q8">
+        <option value="A">Míčové hry (fotbal, volejbal, tenis...)</option>
+        <option value="B">Individuální sporty (běh, plavání, kolo...)</option>
+        <option value="C">Tanec, jóga nebo fitness</option>
+        <option value="D">Zimní sporty (lyže, brusle...)</option>
+        <option value="E">Sport mě spíše míjí</option>
+    </select>
+</div>
+
+<div class="question">
+    <label>9. Jaký je váš největší koníček ve volném čase?</label>
+    <select name="q9">
+        <option value="A">Cestování a příroda</option>
+        <option value="B">Knihy, filmy nebo divadlo</option>
+        <option value="C">Vaření, kutilství nebo zahrádka</option>
+        <option value="D">Hraní her nebo technologie</option>
+        <option value="E">Hudba nebo umělecká tvorba</option>
+    </select>
+</div>
+
+<div class="question">
+    <label>10. Jak byste se popsali jedním slovem?</label>
+    <select name="q10">
+        <option value="A">Optimista</option>
+        <option value="B">Analytik</option>
+        <option value="C">Rebel</option>
+        <option value="D">Snílek</option>
+        <option value="E">Praktik</option>
+        <option value="F">Bavič</option>
+    </select>
+</div>
+
+<div class="question">
+    <label>11. Kolik měříte?</label>
+    <select name="q11">
+        <option value="A">Méně než 165 cm</option>
+        <option value="B">165 - 175 cm</option>
+        <option value="C">176 - 185 cm</option>
+        <option value="D">Více než 185 cm</option>
+    </select>
+</div>
+
+<div class="question">
+    <label>12. Jaký je váš postoj k pozdním příchodům žáků?</label>
+    <select name="q12">
+        <option value="A">Píšu hned zápis, pravidla jsou pravidla</option>
+        <option value="B">Vyslechnu si výmluvu a mávnu rukou</option>
+        <option value="C">Pokud se to neopakuje, neřeším to</option>
+        <option value="D">Sám/sama chodím občas na poslední chvíli</option>
+    </select>
+</div>
+
+<div class="question">
+    <label>13. Jaký je váš nejoblíbenější typ práce?</label>
+    <select name="q13">
+        <option value="A">Práce s lidmi</option>
+        <option value="B">Práce s daty a informacemi</option>
+        <option value="C">Práce s věcmi a nástroji</option>
+        <option value="D">Práce s kreativními projekty</option>
+    </select>
+</div>
+
+<div class="question">
+    <label>14. Z jakého důvodu děláte ve školství</label>
+    <select name="q14">
+        <option value="A">Od základní školy chci děkat vyučujícího</option>
+        <option value="B">Hodně mě baví práce s dětmi</option>
+        <option value="C">Nevědel jsem co dělat</option>
+        <option value="D">Dovedl mě sem</option>
+    </select>
+</div>
+
+        <button type="submit">Odeslat a najít shodu</button>
+    </form>
+    <footer class="botnik">
+    <p>&copy; 2026 Lukáš Horák</p>
+</footer>
+</div>
+</body>
+</html>
